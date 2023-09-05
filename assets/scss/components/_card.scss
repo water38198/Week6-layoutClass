@@ -1,0 +1,21 @@
+.card-text {
+  img {
+    height: 255px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.card-footer {
+  img {
+    width: 24px;
+  }
+}

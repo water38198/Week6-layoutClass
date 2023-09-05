@@ -1,0 +1,28 @@
+.tag {
+  display: block;
+  border: $primary 1px solid;
+  border-left: $primary 4px solid;
+  color: $primary;
+  font-family: 'Noto Serif TC' !important;
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 18px;
+  padding-right: 23px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+  @media (max-width:992px) {
+    padding-left: 12px;
+    padding-right: 15px;
+  }
+
+  @include pad {
+    font-size: 14px;
+  }
+
+  &:hover {
+    color: white;
+    background-color: $primary;
+    border-left: 4px solid $secondary;
+  }
+}

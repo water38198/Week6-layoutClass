@@ -1,0 +1,25 @@
+// BS5
+@import 'bootstrap/scss/functions';
+@import './utils/variables';
+@import 'bootstrap/scss/variables-dark';
+@import 'bootstrap/scss/maps';
+@import 'bootstrap/scss/mixins';
+@import './utils/utilities';
+@import './base/reboot';
+@import 'bootstrap/scss/bootstrap.scss';
+
+// base
+@import './base/typography';
+@import './utils/mixin';
+
+// layout
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+//pages
+@import './pages/index.scss';
+
+//components/
+@import './components/tag';
+@import './components/card';
+@import './components/pagination';

@@ -1,0 +1,79 @@
+.index {
+  .banner {
+    background-image: url(../images/index-banner.png);
+    height: 518px;
+
+    @include pad {
+      height: 400px;
+    }
+
+    @include mobile {
+      background-image: url(../images/index-banner-sm.png);
+      height: 350px;
+    }
+  }
+
+  .nav-category {
+    img {
+      width: 80px;
+
+      @include pad {
+        width: 40px;
+      }
+    }
+
+  }
+
+
+
+  .chatGPT {
+    &-background {
+      background-image: url(../images/online.jpg);
+      background-repeat: no-repeat;
+      height: 100%;
+      background-size: cover;
+      background-position: 50% 35%;
+
+      @include pad {
+        height: 158px;
+      }
+    }
+  }
+
+  button:hover {
+    color: $secondary !important
+  }
+
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+
+  .swiper-slide {
+    white-space: nowrap;
+    letter-spacing: 3.2px;
+
+    @include pad {
+      letter-spacing: 1.6px;
+    }
+  }
+
+  .album {
+    li {
+      &:nth-child(2n) {
+        transform: rotate(2deg)
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-2deg)
+      }
+    }
+
+    img {
+      height: 274px;
+    }
+
+    h3 {
+      transform: translate(-50%, -50%) rotate(-4deg);
+    }
+  }
+}

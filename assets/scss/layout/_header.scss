@@ -1,0 +1,21 @@
+header {
+  img {
+    width: 53px;
+
+    @include mobile {
+      width: 40px;
+    }
+  }
+
+  form {
+    max-width: 335px;
+    width: 100%;
+    flex: 1;
+  }
+
+  .navbar-collapse {
+    a:hover {
+      color: #9C9E18 !important;
+    }
+  }
+}
